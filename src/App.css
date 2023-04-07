@@ -1,38 +1,246 @@
-.App {
+body{
+  padding: 0%;
+  margin: auto;
+  background-color: rgb(38, 122, 122);
+}
+
+.App{
+  height: 100vh;
+  margin-top: 20px;
+  /* background-color: rgb(38, 122, 122); */
+}
+.Upper{
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 40%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftUpper{
+  display: flex;
+  align-items: center;
+}
+.Upper .leftUpper a{
+  text-decoration: none;
+}
+.Upper .leftUpper a h1{
+  font-family: 'Tilt Neon', cursive;
+  font-size: 1.9rem;
+  color: palegreen;
+  caret-color: transparent;
+}
+.rightUpper button{
+  border: none;
+  background-color: rgb(94, 161, 161);
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder
+}
+.rightUpper button:active{
+  transform: translate(0,10%);
+}
+
+.MainDiv,.About{
+  background-color: rgb(94, 161, 161);
+  width: 35%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  border-radius: 5px
+}
+.About h1{
+  text-align: center;
+  font-family: 'Tilt Neon', cursive;
+  color: darkgoldenrod;
+}
+.About p{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 25px;
+  font-size: 1.3rem;
+  color: darkblue;
+}
+
+.MainDiv h1{
+  text-align: center;
+  color: palegreen;
+}
+.MainDiv h3{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 24px;
+  color: darkmagenta;
+}
+.MainDiv h5{
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonMainDiv{
+  width: 50%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 15px;
+  margin-top: 5px;
+}
+.buttonMainDiv button{
+  background-color: rgb(154, 215, 215);
+  border: none;
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bolder;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.buttonMainDiv button:active{
+  transform: translate(0,10%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Lower{
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  caret-color: transparent;
+  color: aliceblue;
+}
+@media screen and (max-width: 480px) {
+  .Upper{
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  .Upper .leftUpper a h1{
+    font-size: 1.3rem;
+  }
+  .rightUpper button{
+    padding: 5.8px;
+  }
+  .MainDiv,.About{
+    width: 75%;
+  }
+  .MainDiv h1{
+    font-size: 1.5rem;
+  }
+  .MainDiv h3{
+    width: 95%;
+    font-size: 20px;
+  }
+  .buttonMainDiv{
+    width: 100%;
+  }
+  .buttonMainDiv button{
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .About h1{
+    font-size: 1.4rem;
+    padding-top: 10px;
+  }
+  .About p{
+    font-size: 1rem;
+  }
+  .Lower{
+    width: 80%;
+    padding: 0;
+    font-size: .5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Upper{
+    width: 70%;
+  }
+  .Upper .leftUpper a h1{
+    font-size: 1.3rem;
+  }
+  .rightUpper button{
+    padding: 5.8px;
+  }
+  .MainDiv,.About{
+    width: 60%;
+  }
+  .MainDiv h1{
+    font-size: 1.5rem;
+  }
+  .MainDiv h3{
+    width: 95%;
+    font-size: 20px;
+  }
+  .buttonMainDiv{
+    width: 100%;
+  }
+  .buttonMainDiv button{
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .About h1{
+    font-size: 1.4rem;
+    padding-top: 10px;
+  }
+  .About p{
+    font-size: 1rem;
+  }
+  .Lower{
+    width: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: .5rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .Upper{
+    width: 60%;
+  }
+  .Upper .leftUpper a h1{
+    font-size: 1.3rem;
+  }
+  .rightUpper button{
+    padding: 5.8px;
+  }
+  .MainDiv,.About{
+    width: 50%;
+  }
+  .MainDiv h1{
+    font-size: 1.5rem;
+  }
+  .MainDiv h3{
+    width: 95%;
+    font-size: 20px;
+  }
+  .buttonMainDiv{
+    width: 100%;
+  }
+  .buttonMainDiv button{
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .About h1{
+    font-size: 1.4rem;
+    padding-top: 10px;
+  }
+  .About p{
+    font-size: 1rem;
+  }
+  .Lower{
+    width: 60%;
+    
   }
 }
